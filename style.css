@@ -1,0 +1,143 @@
+body {
+    font-family: 'Montserrat', 'sans-serif';
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    display: grid;
+    position: relative;
+    align-content: center;
+    place-items: center;
+    background-image: url(prueba2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+
+
+.todo {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Montserrat', 'sans-serif';
+    margin: 0;
+    display:grid;
+    align-content: center;
+    place-items: center;
+    height: 100vh;
+    width: 80vw;
+}
+
+.magnet1 {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+    height: 200px;
+    border: 2px solid rgb(121, 121, 121);
+    rotate: -10deg;
+}
+.magnet2 {
+    position: absolute;
+    top: 5rem;
+    right: 10rem;
+    height: 120px;
+    border: 1px solid black;
+    rotate: 15deg;
+}
+
+.list-container {
+    display: flex;
+    gap: 3rem;
+}
+
+.move-button{
+    display: none;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+input[type="text" i] {
+    padding: 7px 7px;
+}
+
+#active, #ongoing, #done {
+    gap: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    width: 10vw;
+    min-height: 30vh;
+    display: block;
+    list-style-type: disc;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    padding-inline-start: 0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1.5rem;
+
+}
+
+li {
+    background-image: url(Post\ it.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-height: 100px;
+    min-width: 100px;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: none;
+    list-style: none;
+    display: grid;
+    gap: 0.5rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+    font-weight: 500;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+  
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+  
+.task-button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    font-family: inherit;
+    background-color: #000000;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+.task-button:hover {
+    background-color: #f2f3f7;
+    color: #000000;
+    border: 1px solid black;
+  }
+
+.trash-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border-radius: 20%;
+    background-color: white;
+  }
+
+  .trash-icon:hover {
+    background-color: rgb(207, 207, 220);
+
+  }
+  
+ 
+  

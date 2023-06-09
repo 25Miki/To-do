@@ -5,24 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"><script src="script.js"></script>
     <title>To-Do List</title>
 </head>
+
 <body>
+    
     <h1>To-Do List</h1>
+    <div class="task-input">
+        <input class="input" type="text" id="task" placeholder="Enter task">
+        <button class="task-button" onclick="saveTask()">Save</button>
+        </button>
+    </div>
     <div class="list-container">
         <ul id="active">Active    
         </ul>
         <ul id="ongoing">Ongoing
         </ul>
         <ul id="done">Done
+            <button class="trash-icon" onclick="eraseDone()">
+                <img  src="icons8-basura.svg" alt="trash can icon">
+            </button>
         </ul>
+        
+    
     </div>
+    
 
-    <input type="text" id="task" placeholder="Enter task">
-    <button onclick="saveTask()">Save</button>
-
-    <ul id="list"></ul>
 </body>
 </html>
